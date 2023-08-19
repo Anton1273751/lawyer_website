@@ -1,1 +1,175 @@
-/*# sourceMappingURL=index.css.map */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+.btn {
+  background: 0;
+  border: 0;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+body {
+  font-family: Nunito Sans sans-serif;
+}
+
+button {
+  border: 0;
+  background: 0;
+  cursor: pointer;
+}
+
+.container {
+  width: 1320px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  padding: 0 15px;
+}
+
+.header {
+  width: 100%;
+  height: 820px;
+}
+
+.header__menu {
+  display: flex;
+  height: 52px;
+  flex-shrink: 0;
+  align-items: center;
+  background: black;
+}
+.header__wrapper {
+  display: flex;
+  gap: 28px;
+}
+.header__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.header__info_phone {
+  color: white;
+}
+.header__feedback {
+  margin-left: 863px;
+  color: white;
+}
+.header__phone {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.header__mail {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,42 @@
+.header {
+  &__menu {
+    display: flex;
+    height: 52px;
+    flex-shrink: 0;
+    align-items: center;
+    background: black;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 28px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    &_phone {
+      color: white;
+    }
+  }
+  &__feedback {
+    margin-left: 863px;
+    color: white;
+  }
+  &__phone {
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+  }
+  &__mail {
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+  }
+}

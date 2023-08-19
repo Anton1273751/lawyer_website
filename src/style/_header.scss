@@ -4,7 +4,7 @@
     height: 52px;
     flex-shrink: 0;
     align-items: center;
-    background: black;
+    background: #010101;
   }
 
   &__wrapper {
@@ -17,13 +17,14 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-    &_phone {
-      color: white;
-    }
   }
   &__feedback {
     margin-left: 863px;
-    color: white;
+    color: #4f8ff0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
   }
   &__phone {
     color: #fff;

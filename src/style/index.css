@@ -140,7 +140,7 @@ button {
   height: 52px;
   flex-shrink: 0;
   align-items: center;
-  background: black;
+  background: #010101;
 }
 .header__wrapper {
   display: flex;
@@ -152,12 +152,13 @@ button {
   justify-content: center;
   gap: 8px;
 }
-.header__info_phone {
-  color: white;
-}
 .header__feedback {
   margin-left: 863px;
-  color: white;
+  color: #4f8ff0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
 }
 .header__phone {
   color: #fff;

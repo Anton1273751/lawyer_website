@@ -135,6 +135,14 @@ button {
   height: 820px;
 }
 
+.header-iiner {
+  background-image: url(/src/images/menu/library.webp);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 .header__menu {
   display: flex;
   height: 52px;
@@ -173,4 +181,99 @@ button {
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
+}
+.header__lead {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  gap: 8px;
+}
+.header__text {
+  color: #fff;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.header__headline {
+  color: #4f8ff0;
+  font-family: Nunito Sans;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.header__article {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  white-space: pre-line;
+}
+.header__button {
+  display: inline-flex;
+  padding: 16px 24px;
+  align-items: flex-start;
+  gap: 10px;
+  border: 2px solid #4f8ff0;
+  background: #4f8ff0;
+}
+
+.nav {
+  display: flex;
+  background: rgba(1, 1, 1, 0.76);
+  opacity: 1;
+}
+.nav__logo {
+  display: flex;
+  flex-direction: column;
+}
+.nav__title {
+  color: #4f8ff0;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.nav__subtitle {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 150%;
+  text-transform: lowercase;
+  margin-top: 10px;
+}
+.nav__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin-left: 330px;
+}
+.nav__btn {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.nav__btn:hover {
+  color: #4f8ff0;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-decoration-line: underline;
 }/*# sourceMappingURL=index.css.map */

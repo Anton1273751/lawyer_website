@@ -1,10 +1,8 @@
-.header-iiner {
-  background-image: url(/src/images/menu/library.webp);
-  object-fit: cover;
-  object-position: center;
-}
+
 
 .header {
+  height: 820px;
+  background: lightgray url(../images/menu/library.webp) no-repeat center/cover;
   &__menu {
     display: flex;
     height: 52px;

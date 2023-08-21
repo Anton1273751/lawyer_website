@@ -326,7 +326,7 @@ button {
 
 .card {
   background: #f7f7f7;
-  padding-top: 48px;
+  padding: 80px 0;
 }
 .card__service {
   display: flex;
@@ -417,4 +417,59 @@ button {
   font-style: normal;
   font-weight: 900;
   line-height: 120%;
+}
+
+.company__wrapper {
+  display: flex;
+  padding: 80px 0;
+}
+.company__info {
+  display: flex;
+  flex-direction: column;
+}
+.company__name {
+  color: #222;
+  font-family: Nunito Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+}
+.company__title {
+  color: #4f8ff0;
+  font-family: Nunito Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.company__text {
+  width: 720px;
+  height: 264px;
+  margin-top: 37px;
+  color: #222;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.company__img {
+  width: 535px;
+  height: 359px;
+  margin-left: 64px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.company__btn {
+  display: flex;
+  width: 210px;
+  height: 49px;
+  padding: 16px 24px;
+  align-items: flex-start;
+  gap: 10px;
+  border: 2px solid #4f8ff0;
 }/*# sourceMappingURL=index.css.map */

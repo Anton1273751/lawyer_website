@@ -1,0 +1,55 @@
+.company {
+  &__wrapper {
+    display: flex;
+    padding: 80px 0;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+  &__name {
+    color: #222;
+    font-family: Nunito Sans;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+  }
+  &__title {
+    color: #4f8ff0;
+    font-family: Nunito Sans;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
+  &__text {
+    width: 720px;
+    height: 264px;
+    margin-top: 37px;
+    color: #222;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  &__img {
+    width: 535px;
+    height: 359px;
+    margin-left: 64px;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__btn {
+    display: flex;
+    width: 210px;
+    height: 49px;
+    padding: 16px 24px;
+    align-items: flex-start;
+    gap: 10px;
+    border: 2px solid #4f8ff0;
+  }
+}

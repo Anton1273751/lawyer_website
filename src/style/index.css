@@ -322,20 +322,16 @@ button {
   text-decoration-line: underline;
 }
 
-.services__wrapper {
+.card {
+  background: #f7f7f7;
+  padding-top: 48px;
+}
+.card__service {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding-top: 80px;
 }
-.services__title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.services__textTitle {
+.card__texttitle {
   color: #222;
   font-family: Nunito Sans;
   font-size: 28px;
@@ -344,14 +340,14 @@ button {
   line-height: 150%;
   text-transform: uppercase;
 }
-.services__block {
+.card__block {
   width: 50px;
   height: 3px;
   background: #4f8ff0;
   margin-top: 10px;
 }
-.services__text {
-  width: 920px;
+.card__servicetext {
+  max-width: 920px;
   color: #222;
   text-align: center;
   font-family: Nunito Sans;
@@ -361,10 +357,6 @@ button {
   line-height: 120%;
   margin-top: 24px;
 }
-
-.card {
-  padding-top: 48px;
-}
 .card__wrapper {
   display: flex;
   align-items: center;
@@ -373,7 +365,7 @@ button {
   background: #f7f7f7;
   flex-shrink: 0;
 }
-.card__service {
+.card__info {
   display: flex;
   width: 424px;
   height: 250px;

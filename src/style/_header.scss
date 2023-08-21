@@ -1,10 +1,9 @@
-
-
 .header {
   height: 820px;
   background: lightgray url(../images/menu/library.webp) no-repeat center/cover;
   &__menu {
     display: flex;
+    width: 100%;
     height: 52px;
     flex-shrink: 0;
     align-items: center;
@@ -95,6 +94,7 @@
   &__link {
     color: #fff;
     text-align: center;
+    font-family: Nunito Sans;
     font-size: 14px;
     font-style: normal;
     font-weight: 900;

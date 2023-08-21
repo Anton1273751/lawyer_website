@@ -172,6 +172,7 @@ button {
 }
 .header__menu {
   display: flex;
+  width: 100%;
   height: 52px;
   flex-shrink: 0;
   align-items: center;
@@ -260,6 +261,7 @@ button {
 .header__link {
   color: #fff;
   text-align: center;
+  font-family: Nunito Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 900;
@@ -372,12 +374,12 @@ button {
   padding: 50px 32px;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
   flex-shrink: 0;
-  background: var(--white-color-100, #fff);
+  background: #fff;
 }
 .card__title {
   color: #222;
+  margin-top: 15px;
   text-align: center;
   font-family: Nunito Sans;
   font-size: 20px;
@@ -387,6 +389,7 @@ button {
 }
 .card__text {
   color: #222;
+  margin-top: 10px;
   text-align: center;
   font-family: Nunito Sans;
   font-size: 14px;
@@ -396,8 +399,8 @@ button {
 }
 .card__btn {
   display: flex;
-  width: 90px;
-  height: 17px;
+  width: 138px;
+  height: 49px;
   padding: 16px 24px;
   align-items: flex-start;
   gap: 10px;
@@ -406,14 +409,12 @@ button {
   justify-content: center;
   margin-top: 48px;
 }
-.card__button {
-  color: var(--white-color-100, #fff);
+.card__link {
+  color: #fff;
   text-align: center;
   font-family: Nunito Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 900;
   line-height: 120%;
-  text-transform: uppercase;
-  overflow: hidden;
 }/*# sourceMappingURL=index.css.map */

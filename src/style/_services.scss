@@ -1,0 +1,42 @@
+.services {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__textTitle {
+    color: #222;
+    font-family: Nunito Sans;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
+  &__block {
+    width: 50px;
+    height: 3px;
+    background: #4f8ff0;
+    margin-top: 10px;
+  }
+  &__text {
+    width: 920px;
+    color: #222;
+    text-align: center;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin-top: 24px;
+  }
+}

@@ -74,6 +74,7 @@
     text-transform: uppercase;
   }
   &__article {
+    width: 1090px;
     color: #fff;
     text-align: center;
     font-size: 20px;
@@ -101,55 +102,5 @@
     font-weight: 900;
     line-height: 120%;
     text-transform: uppercase;
-  }
-}
-.nav {
-  display: flex;
-  background: rgba(1, 1, 1, 0.76);
-  opacity: 1;
-  &__logo {
-    display: flex;
-    flex-direction: column;
-  }
-  &__title {
-    color: #4f8ff0;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 150%;
-    text-transform: uppercase;
-  }
-  &__subtitle {
-    color: #fff;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 150%;
-    text-transform: lowercase;
-    margin-top: 10px;
-  }
-  &__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
-    margin-left: 330px;
-  }
-  &__btn {
-    color: #fff;
-    text-align: center;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-  }
-  &__btn:hover {
-    color: #4f8ff0;
-    text-align: center;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-    text-decoration-line: underline;
   }
 }

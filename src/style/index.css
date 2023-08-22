@@ -169,10 +169,12 @@ button {
 .header {
   height: 820px;
   background: lightgray url(../images/menu/library.webp) no-repeat center/cover;
+  margin: 0 auto;
 }
 .header__menu {
   display: flex;
   width: 100%;
+  margin: 0 auto;
   height: 52px;
   flex-shrink: 0;
   align-items: center;
@@ -212,13 +214,11 @@ button {
 }
 .header__lead {
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 150px;
-  gap: 8px;
 }
 .header__text {
   color: #fff;
@@ -236,6 +236,7 @@ button {
   font-weight: 600;
   line-height: 150%;
   text-transform: uppercase;
+  margin-top: 8px;
 }
 .header__article {
   width: 1090px;
@@ -271,6 +272,7 @@ button {
 
 .header__nav {
   height: 112px;
+  margin: 0 auto;
 }
 
 .nav {
@@ -281,13 +283,13 @@ button {
 .nav__logo {
   display: flex;
   flex-direction: column;
+  padding-top: 22px;
 }
 .nav__title {
   color: #4f8ff0;
   font-size: 28px;
   font-style: normal;
   font-weight: 900;
-  line-height: 150%;
   text-transform: uppercase;
 }
 .nav__subtitle {
@@ -297,14 +299,12 @@ button {
   font-weight: 900;
   line-height: 150%;
   text-transform: lowercase;
-  margin-top: 10px;
 }
 .nav__wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 32px;
-  margin-left: 330px;
+  justify-content: space-between;
 }
 .nav__btn {
   color: #fff;
@@ -313,6 +313,12 @@ button {
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
+}
+.nav__link {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
 }
 .nav__btn:hover {
   color: #4f8ff0;

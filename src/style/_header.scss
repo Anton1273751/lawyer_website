@@ -1,9 +1,11 @@
 .header {
   height: 820px;
   background: lightgray url(../images/menu/library.webp) no-repeat center/cover;
+  margin: 0 auto;
   &__menu {
     display: flex;
     width: 100%;
+    margin: 0 auto;
     height: 52px;
     flex-shrink: 0;
     align-items: center;
@@ -45,13 +47,11 @@
   }
   &__lead {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 150px;
-    gap: 8px;
   }
   &__text {
     color: #fff;
@@ -69,6 +69,7 @@
     font-weight: 600;
     line-height: 150%;
     text-transform: uppercase;
+    margin-top: 8px;
   }
   &__article {
     width: 1090px;

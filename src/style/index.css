@@ -479,12 +479,34 @@ button {
      object-position: center;
   text-overflow: initial;
 }
-.company__btn {
+.company__btn-inner {
   display: flex;
-  width: 210px;
-  height: 49px;
+  margin-top: 32px;
+}
+.company__history {
+  display: flex;
   padding: 16px 24px;
   align-items: flex-start;
   gap: 10px;
   border: 2px solid #4f8ff0;
+  background: #4f8ff0;
+}
+.company__certificate {
+  display: flex;
+  padding: 16px 24px;
+  margin-left: 24px;
+  align-items: flex-start;
+  gap: 10px;
+  border: 2px solid #e6e6e6;
+  background: #e6e6e6;
+}
+.company__link {
+  color: #fff;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+  text-transform: uppercase;
 }/*# sourceMappingURL=index.css.map */

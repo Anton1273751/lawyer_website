@@ -25,10 +25,18 @@
     line-height: 150%;
     text-transform: uppercase;
   }
+  &__block {
+    width: 50px;
+    height: 3px;
+    background: #4f8ff0;
+    margin-top: 10px;
+  }
   &__text {
+    display: flex;
     width: 720px;
     height: 264px;
     margin-top: 37px;
+    margin-top: 24px;
     color: #222;
     font-family: Nunito Sans;
     font-size: 16px;
@@ -40,8 +48,10 @@
     width: 535px;
     height: 359px;
     margin-left: 64px;
+    background: lightgray;
     object-fit: cover;
     object-position: center;
+    text-overflow: initial;
   }
   &__btn {
     display: flex;

@@ -239,14 +239,13 @@ button {
   margin-top: 8px;
 }
 .header__article {
-  width: 1090px;
+  max-width: 1090px;
   color: #fff;
   text-align: center;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
-  white-space: pre-line;
   margin-top: 8px;
 }
 .header__button {
@@ -450,10 +449,18 @@ button {
   line-height: 150%;
   text-transform: uppercase;
 }
+.company__block {
+  width: 50px;
+  height: 3px;
+  background: #4f8ff0;
+  margin-top: 10px;
+}
 .company__text {
+  display: flex;
   width: 720px;
   height: 264px;
   margin-top: 37px;
+  margin-top: 24px;
   color: #222;
   font-family: Nunito Sans;
   font-size: 16px;
@@ -465,10 +472,12 @@ button {
   width: 535px;
   height: 359px;
   margin-left: 64px;
+  background: lightgray;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  text-overflow: initial;
 }
 .company__btn {
   display: flex;

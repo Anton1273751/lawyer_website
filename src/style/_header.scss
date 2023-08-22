@@ -72,14 +72,13 @@
     margin-top: 8px;
   }
   &__article {
-    width: 1090px;
+    max-width: 1090px;
     color: #fff;
     text-align: center;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
-    white-space: pre-line;
     margin-top: 8px;
   }
   &__button {

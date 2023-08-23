@@ -51,8 +51,39 @@
     align-items: center;
     flex-shrink: 0;
     background: #fff;
+    position: relative;
   }
 
+  &__corner {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+  }
+
+  &__corner-lt {
+    top: 20px;
+    left: 20px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+  }
+  &__corner-rt {
+    right: 20px;
+    top: 20px;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+  }
+  &__corner-rb {
+    right: 20px;
+    bottom: 20px;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  &__corner-lb {
+    left: 20px;
+    bottom: 20px;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+  }
   &__info:hover {
     background: var(--accent-color);
     cursor: pointer;

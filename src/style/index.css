@@ -357,6 +357,36 @@ button {
   align-items: center;
   flex-shrink: 0;
   background: #fff;
+  position: relative;
+}
+.card__corner {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+}
+.card__corner-lt {
+  top: 20px;
+  left: 20px;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+}
+.card__corner-rt {
+  right: 20px;
+  top: 20px;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+}
+.card__corner-rb {
+  right: 20px;
+  bottom: 20px;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.card__corner-lb {
+  left: 20px;
+  bottom: 20px;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
 }
 .card__info:hover {
   background: var(--accent-color);

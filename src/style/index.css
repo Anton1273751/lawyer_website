@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700;6..12,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700;6..12,800;6..12,900&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -114,7 +120,7 @@ legend {
 }
 
 body {
-  font-family: Nunito Sans;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 button {
@@ -130,42 +136,6 @@ button {
   padding: 0 15px;
 }
 
-@font-face {
-  font-family: "Nunito Sans";
-  src: url("../../fonts/NunitoSans-Light.woff2") format("woff2") url("../../fonts/NunitoSans-Light.woff") format("woff") url("../../fonts/NunitoSans-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Nunito Sans";
-  src: url("../../fonts/NunitoSans-Regular.woff2") format("woff2") url("../../fonts/NunitoSans-Regular.woff") format("woff") url("../../fonts/NunitoSans-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Nunito Sans";
-  src: url("../../fonts/NunitoSans-SemiBold.woff2") format("woff2") url("../../fonts/NunitoSans-SemiBold.woff") format("woff") url("../../fonts/NunitoSans-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Nunito Sans";
-  src: url("../../fonts/NunitoSans-Bold.woff2") format("woff2") url("../../fonts/NunitoSans-Bold.woff") format("woff") url("../../fonts/NunitoSans-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Nunito Sans";
-  src: url("../../fonts/NunitoSans-ExtraBold.woff2") format("woff2") url("../../fonts/NunitoSans-ExtraBold.woff") format("woff") url("../../fonts/NunitoSans-ExtraBold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Nunito Sans";
-  src: url("../../fonts/NunitoSans-Black.woff2") format("woff2") url("../../fonts/NunitoSans-Black.woff") format("woff") url("../../fonts/NunitoSans-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
 .header {
   height: 820px;
   background: lightgray url(../images/menu/library.webp) no-repeat center/cover;
@@ -182,7 +152,12 @@ button {
 }
 .header__wrapper {
   display: flex;
+  justify-content: space-between;
   gap: 28px;
+}
+.header__contact {
+  display: flex;
+  gap: 24px;
 }
 .header__info {
   display: flex;
@@ -191,7 +166,7 @@ button {
   gap: 8px;
 }
 .header__feedback {
-  margin-left: 863px;
+  display: flex;
   color: #4f8ff0;
   font-size: 14px;
   font-style: normal;
@@ -230,7 +205,6 @@ button {
 }
 .header__headline {
   color: #4f8ff0;
-  font-family: Nunito Sans;
   font-size: 56px;
   font-style: normal;
   font-weight: 600;
@@ -250,7 +224,6 @@ button {
 }
 .header__button {
   display: inline-flex;
-  font-family: Nunito Sans;
   padding: 16px 24px;
   align-items: flex-start;
   gap: 10px;
@@ -261,7 +234,6 @@ button {
 .header__link {
   color: #fff;
   text-align: center;
-  font-family: Nunito Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 900;
@@ -340,7 +312,6 @@ button {
 }
 .card__texttitle {
   color: #222;
-  font-family: Nunito Sans;
   font-size: 28px;
   font-style: normal;
   font-weight: 800;
@@ -357,7 +328,6 @@ button {
   max-width: 920px;
   color: #222;
   text-align: center;
-  font-family: Nunito Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -386,7 +356,6 @@ button {
   color: #222;
   margin-top: 15px;
   text-align: center;
-  font-family: Nunito Sans;
   font-size: 20px;
   font-style: normal;
   font-weight: 800;
@@ -396,7 +365,6 @@ button {
   color: #222;
   margin-top: 10px;
   text-align: center;
-  font-family: Nunito Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -417,7 +385,6 @@ button {
 .card__link {
   color: #fff;
   text-align: center;
-  font-family: Nunito Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 900;
@@ -434,7 +401,6 @@ button {
 }
 .company__name {
   color: #222;
-  font-family: Nunito Sans;
   font-size: 28px;
   font-style: normal;
   font-weight: 800;
@@ -442,7 +408,6 @@ button {
 }
 .company__title {
   color: #4f8ff0;
-  font-family: Nunito Sans;
   font-size: 28px;
   font-style: normal;
   font-weight: 900;
@@ -462,7 +427,6 @@ button {
   margin-top: 37px;
   margin-top: 24px;
   color: #222;
-  font-family: Nunito Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -503,7 +467,6 @@ button {
 .company__link {
   color: #fff;
   text-align: center;
-  font-family: Nunito Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 900;

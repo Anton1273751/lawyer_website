@@ -14,7 +14,13 @@
 
   &__wrapper {
     display: flex;
+    justify-content: space-between;
     gap: 28px;
+  }
+
+  &__contact {
+    display: flex;
+    gap: 24px;
   }
 
   &__info {
@@ -24,7 +30,7 @@
     gap: 8px;
   }
   &__feedback {
-    margin-left: 863px;
+    display: flex;
     color: #4f8ff0;
     font-size: 14px;
     font-style: normal;
@@ -63,7 +69,6 @@
   }
   &__headline {
     color: #4f8ff0;
-    font-family: Nunito Sans;
     font-size: 56px;
     font-style: normal;
     font-weight: 600;
@@ -83,7 +88,6 @@
   }
   &__button {
     display: inline-flex;
-    font-family: Nunito Sans;
     padding: 16px 24px;
     align-items: flex-start;
     gap: 10px;
@@ -94,7 +98,6 @@
   &__link {
     color: #fff;
     text-align: center;
-    font-family: Nunito Sans;
     font-size: 14px;
     font-style: normal;
     font-weight: 900;

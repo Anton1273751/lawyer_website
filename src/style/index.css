@@ -111,6 +111,10 @@ legend {
   display: block;
 }
 
+:root {
+  --accent-color: #4f8ff0;
+}
+
 .btn {
   background: 0;
   border: 0;
@@ -136,11 +140,6 @@ button {
   padding: 0 15px;
 }
 
-.header {
-  height: 820px;
-  background: lightgray url(../images/menu/library.webp) no-repeat center/cover;
-  margin: 0 auto;
-}
 .header__menu {
   display: flex;
   width: 100%;
@@ -188,14 +187,19 @@ button {
   line-height: 120%;
 }
 .header__lead {
-  width: 100%;
+  height: 820px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 150px;
+  background: lightgrey;
+  background-image: url(/src/images/menu/library.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .header__text {
+  margin-top: 150px;
   color: #fff;
   font-size: 30px;
   font-style: normal;
@@ -204,7 +208,7 @@ button {
   text-transform: uppercase;
 }
 .header__headline {
-  color: #4f8ff0;
+  color: var(--accent-color);
   font-size: 56px;
   font-style: normal;
   font-weight: 600;
@@ -249,12 +253,13 @@ button {
 .nav {
   display: flex;
   background: rgba(1, 1, 1, 0.76);
-  opacity: 1;
+  width: 100%;
+  position: absolute;
 }
 .nav__logo {
   display: flex;
   flex-direction: column;
-  padding-top: 22px;
+  margin-top: 20px;
 }
 .nav__title {
   color: #4f8ff0;
@@ -318,11 +323,10 @@ button {
   line-height: 150%;
   text-transform: uppercase;
 }
-.card__block {
+.card__texttitle::after {
   width: 50px;
   height: 3px;
   background: #4f8ff0;
-  margin-top: 10px;
 }
 .card__servicetext {
   max-width: 920px;
@@ -337,10 +341,12 @@ button {
 .card__wrapper {
   display: flex;
   align-items: center;
+  margin-top: 48px;
   justify-content: center;
   flex-wrap: wrap;
   background: #f7f7f7;
   flex-shrink: 0;
+  gap: 24px;
 }
 .card__info {
   display: flex;
@@ -351,6 +357,15 @@ button {
   align-items: center;
   flex-shrink: 0;
   background: #fff;
+}
+.card__info:hover {
+  background: var(--accent-color);
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+.card__info:hover path {
+  fill: #fff;
 }
 .card__title {
   color: #222;

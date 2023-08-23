@@ -1,7 +1,4 @@
 .header {
-  height: 820px;
-  background: lightgray url(../images/menu/library.webp) no-repeat center/cover;
-  margin: 0 auto;
   &__menu {
     display: flex;
     width: 100%;
@@ -52,14 +49,19 @@
     line-height: 120%;
   }
   &__lead {
-    width: 100%;
+    height: 820px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 150px;
+    background: lightgrey;
+    background-image: url(/src/images/menu/library.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   &__text {
+    margin-top: 150px;
     color: #fff;
     font-size: 30px;
     font-style: normal;
@@ -68,7 +70,7 @@
     text-transform: uppercase;
   }
   &__headline {
-    color: #4f8ff0;
+    color: var(--accent-color);
     font-size: 56px;
     font-style: normal;
     font-weight: 600;

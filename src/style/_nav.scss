@@ -6,11 +6,13 @@
 .nav {
   display: flex;
   background: rgba(1, 1, 1, 0.76);
-  opacity: 1;
+  width: 100%;
+  position: absolute;
+
   &__logo {
     display: flex;
     flex-direction: column;
-    padding-top: 22px;
+    margin-top: 20px;
   }
   &__title {
     color: #4f8ff0;

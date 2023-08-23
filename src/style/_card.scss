@@ -16,11 +16,11 @@
     line-height: 150%;
     text-transform: uppercase;
   }
-  &__block {
+
+  &__texttitle::after {
     width: 50px;
     height: 3px;
     background: #4f8ff0;
-    margin-top: 10px;
   }
   &__servicetext {
     max-width: 920px;
@@ -35,10 +35,12 @@
   &__wrapper {
     display: flex;
     align-items: center;
+    margin-top: 48px;
     justify-content: center;
     flex-wrap: wrap;
     background: #f7f7f7;
     flex-shrink: 0;
+    gap: 24px;
   }
   &__info {
     display: flex;
@@ -51,6 +53,17 @@
     background: #fff;
   }
 
+  &__info:hover {
+    background: var(--accent-color);
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+  }
+
+  &__info:hover path {
+    fill: #fff;
+  }
+
   &__title {
     color: #222;
     margin-top: 15px;
@@ -60,6 +73,7 @@
     font-weight: 800;
     line-height: 150%;
   }
+
   &__text {
     color: #222;
     margin-top: 10px;
@@ -69,6 +83,7 @@
     font-weight: 400;
     line-height: 120%;
   }
+
   &__btn {
     display: flex;
     width: 138px;

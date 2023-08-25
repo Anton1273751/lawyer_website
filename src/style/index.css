@@ -324,9 +324,13 @@ button {
   text-transform: uppercase;
 }
 .card__texttitle::after {
+  content: "";
+  display: block;
+  top: 30px;
   width: 50px;
   height: 3px;
   background: #4f8ff0;
+  margin: 10px auto 0;
 }
 .card__servicetext {
   max-width: 920px;
@@ -363,6 +367,7 @@ button {
   width: 35px;
   height: 35px;
   position: absolute;
+  background: transparent;
 }
 .card__corner-lt {
   top: 20px;
@@ -373,8 +378,8 @@ button {
 .card__corner-rt {
   right: 20px;
   top: 20px;
-  border-top: 1px solid white;
   border-right: 1px solid white;
+  border-top: 1px solid white;
 }
 .card__corner-rb {
   right: 20px;
@@ -451,6 +456,14 @@ button {
   font-weight: 800;
   line-height: 150%;
 }
+.company__name::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #4f8ff0;
+  margin-top: 10px;
+}
 .company__title {
   color: #4f8ff0;
   font-size: 28px;
@@ -458,12 +471,6 @@ button {
   font-weight: 900;
   line-height: 150%;
   text-transform: uppercase;
-}
-.company__block {
-  width: 50px;
-  height: 3px;
-  background: #4f8ff0;
-  margin-top: 10px;
 }
 .company__text {
   display: flex;
@@ -555,9 +562,12 @@ button {
   text-transform: uppercase;
 }
 .lawyers__title::after {
+  content: "";
+  display: block;
   width: 50px;
   height: 3px;
   background: #4f8ff0;
+  margin: 10px auto;
 }
 .lawyers__staff {
   display: flex;
@@ -571,6 +581,7 @@ button {
   width: 920px;
   color: #222;
   text-align: center;
+  margin-top: 24px;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

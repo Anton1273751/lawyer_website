@@ -15,6 +15,14 @@
     font-weight: 800;
     line-height: 150%;
   }
+  &__name::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #4f8ff0;
+    margin-top: 10px;
+  }
   &__title {
     color: #4f8ff0;
     font-size: 28px;
@@ -23,12 +31,7 @@
     line-height: 150%;
     text-transform: uppercase;
   }
-  &__block {
-    width: 50px;
-    height: 3px;
-    background: #4f8ff0;
-    margin-top: 10px;
-  }
+
   &__text {
     display: flex;
     width: 720px;

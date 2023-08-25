@@ -1,3 +1,5 @@
+
+
 .card {
   background: #f7f7f7;
   padding: 80px 0;
@@ -18,9 +20,13 @@
   }
 
   &__texttitle::after {
+    content: "";
+    display: block;
+    top: 30px;
     width: 50px;
     height: 3px;
     background: #4f8ff0;
+    margin: 10px auto 0;
   }
   &__servicetext {
     max-width: 920px;
@@ -58,6 +64,7 @@
     width: 35px;
     height: 35px;
     position: absolute;
+    background: transparent;
   }
 
   &__corner-lt {
@@ -69,8 +76,8 @@
   &__corner-rt {
     right: 20px;
     top: 20px;
-    border-top: 1px solid white;
     border-right: 1px solid white;
+    border-top: 1px solid white;
   }
   &__corner-rb {
     right: 20px;

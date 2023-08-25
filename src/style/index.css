@@ -397,7 +397,7 @@ button {
   background: var(--accent-color);
   cursor: pointer;
   color: white;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 .card__info:hover path {
   fill: #fff;
@@ -603,7 +603,7 @@ button {
   margin-top: 10px;
   font-style: normal;
   font-weight: 300;
-  line-height: 120%; /* 16.8px */
+  line-height: 120%;
   text-transform: lowercase;
 }
 

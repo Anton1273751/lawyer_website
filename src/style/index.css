@@ -533,8 +533,6 @@ button {
 .lawyers__info {
   display: flex;
   margin-top: 48px;
-  flex-wrap: nowrap;
-  gap: 24px;
   justify-content: space-between;
 }
 .lawyers__wrapper {
@@ -615,4 +613,40 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.clients__title {
+  color: #222;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.clients__title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+  margin-top: 10px;
+}
+.clients__card {
+  display: flex;
+  margin-top: 48px;
+  gap: 24px;
+}
+.clients__info {
+  padding: 32px;
+  background: #fff;
+  box-shadow: 2px 2px 10px 0px rgba(33, 33, 33, 0.15);
+}
+.clients__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.clients__partner {
+  display: flex;
+  max-width: 400px;
+  flex-direction: column;
 }/*# sourceMappingURL=index.css.map */

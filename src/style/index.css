@@ -814,6 +814,9 @@ button {
   background: #222;
   padding: 80px 0;
 }
+.footer .aside {
+  height: 100%;
+}
 .footer__title {
   color: #4f8ff0;
   font-size: 28px;
@@ -845,6 +848,7 @@ button {
   align-items: center;
   justify-content: center;
   justify-content: space-between;
+  position: relative;
 }
 .footer__head::after {
   content: "";
@@ -853,4 +857,135 @@ button {
   height: 1px;
   opacity: 0.2;
   background: #8c8c8c;
+  position: absolute;
+  top: 105px;
+}
+.footer__contacts {
+  display: flex;
+  margin-top: 68px;
+  justify-content: space-between;
+}
+.footer__wrap {
+  display: flex;
+  flex-direction: column;
+}
+.footer__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  flex-shrink: 0;
+  background: #2c2c2c;
+}
+.footer__adress {
+  display: flex;
+}
+.footer__phone {
+  display: flex;
+}
+.footer__mail {
+  display: flex;
+}
+.footer__info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 24px;
+}
+.footer__lead {
+  color: #8c8c8c;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+.footer__text {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.footer__feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer__link {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-left: 141px;
+}
+.footer__link:hover {
+  color: #4f8ff0;
+}
+.footer__card {
+  display: flex;
+  width: 424px;
+  height: 100%;
+  flex-direction: column;
+}
+.footer__leading-lawyer {
+  display: flex;
+  gap: 24px;
+}
+.footer__name {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.footer__job-title {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+  margin-top: 4px;
+}
+.footer__card-text {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 16px;
+}
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  border: #4f8ff0;
+  background: #4f8ff0;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-top: 24px;
+}
+.footer__aside {
+  height: 49px;
+  background: #181818;
+}
+.footer__basement {
+  display: flex;
+  padding: 16px 0;
+  justify-content: space-between;
+}
+.footer__aside-text {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
 }/*# sourceMappingURL=index.css.map */

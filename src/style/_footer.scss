@@ -1,0 +1,30 @@
+.footer {
+  background: #222;
+  padding: 80px 0;
+
+  &__title {
+    @include accent-title;
+  }
+  &__subtitle {
+    @include accent-subtitle;
+  }
+  &__article {
+    @include accent-article;
+    max-width: 820px;
+    height: 100%;
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  &__head::after {
+    content: "";
+    display: block;
+    width: 1320px;
+    height: 1px;
+    opacity: 0.2;
+    background: #8c8c8c;
+  }
+}

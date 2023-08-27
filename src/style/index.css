@@ -869,6 +869,7 @@ button {
 .footer__wrap {
   display: flex;
   flex-direction: column;
+  gap: 24px;
 }
 .footer__img {
   display: flex;

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --accent-color: #4f8ff0;
 }
@@ -19,7 +23,7 @@ button {
 }
 
 .container {
-  width: 1320px;
+  max-width: 1320px;
   margin: 0 auto;
   box-sizing: content-box;
   padding: 0 15px;

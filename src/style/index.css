@@ -111,6 +111,10 @@ legend {
   display: block;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --accent-color: #4f8ff0;
 }
@@ -134,7 +138,7 @@ button {
 }
 
 .container {
-  width: 1320px;
+  max-width: 1320px;
   margin: 0 auto;
   box-sizing: content-box;
   padding: 0 15px;
@@ -364,44 +368,20 @@ button {
   background: #fff;
   position: relative;
 }
-.card__corner {
-  width: 35px;
-  height: 35px;
-  position: absolute;
-  background: transparent;
-}
-.card__corner-lt {
-  top: 20px;
-  left: 20px;
-  border-top: 1px solid white;
-  border-left: 1px solid white;
-}
-.card__corner-rt {
-  right: 20px;
-  top: 20px;
-  border-right: 1px solid white;
-  border-top: 1px solid white;
-}
-.card__corner-rb {
-  right: 20px;
-  bottom: 20px;
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;
-}
-.card__corner-lb {
-  left: 20px;
-  bottom: 20px;
-  border-left: 1px solid white;
-  border-bottom: 1px solid white;
-}
 .card__info:hover {
+  color: white;
   background: var(--accent-color);
   cursor: pointer;
-  color: white;
   transition: 0.6s;
+}
+.card__info:hover h3 {
+  color: #fff;
 }
 .card__info:hover path {
   fill: #fff;
+}
+.card__info:hover p {
+  color: #fff;
 }
 .card__title {
   color: #222;
@@ -440,6 +420,46 @@ button {
   font-style: normal;
   font-weight: 900;
   line-height: 120%;
+}
+.card__corner-lt {
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+.card__corner-rt {
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.card__corner-lb {
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}
+.card__corner-rb {
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
 }
 
 .company__wrapper {
@@ -610,6 +630,20 @@ button {
   line-height: 120%;
   text-transform: lowercase;
 }
+.lawyers__staff-info {
+  display: flex;
+  padding: 20px;
+  width: 312px;
+  height: 100%;
+  flex-direction: column;
+}
+.lawyers__text {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+}
 
 .clients {
   padding: 80px 0;
@@ -668,7 +702,6 @@ button {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  background: lightgray;
 }
 .clients__article {
   color: #222;

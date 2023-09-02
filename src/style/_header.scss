@@ -8,13 +8,13 @@
     align-items: center;
     background: #010101;
   }
-
   &__wrapper {
     display: flex;
+    align-items: center;
+    justify-content: center;
     justify-content: space-between;
-    gap: 28px;
+    width: 100%;
   }
-
   &__contact {
     display: flex;
     gap: 24px;
@@ -49,11 +49,10 @@
     line-height: 120%;
   }
   &__lead {
-    height: 820px;
     display: flex;
+    height: 820px;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     background: lightgrey;
     background-image: url(/src/images/menu/library.webp);
     background-position: center;
@@ -61,8 +60,8 @@
     background-repeat: no-repeat;
   }
   &__text {
-    margin-top: 150px;
     color: #fff;
+    margin-top: 150px;
     font-size: 30px;
     font-style: normal;
     font-weight: 300;
@@ -105,5 +104,40 @@
     font-weight: 900;
     line-height: 120%;
     text-transform: uppercase;
+  }
+  &__slides {
+    max-width: 1320px;
+    width: 100%;
+    margin-top: 192px;
+  }
+  &__slides-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  &__block-wrap {
+    display: flex;
+    align-items: end;
+    gap: 8px;
+  }
+  &__block-blue {
+    width: 4px;
+    height: 40px;
+    background: var(--accent-color);
+  }
+  &__block-white {
+    width: 4px;
+    height: 24px;
+    background: #e6e6e6;
+  }
+  &__scrol-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__block-line {
+    width: 32px;
+    height: 2px;
+    background: #e6e6e6;
   }
 }

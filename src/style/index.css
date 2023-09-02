@@ -252,6 +252,7 @@ button {
 .header__slides {
   max-width: 1320px;
   width: 100%;
+  padding: 0 15px;
   margin-top: 192px;
 }
 .header__slides-wrap {
@@ -278,11 +279,13 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
 }
 .header__block-line {
-  width: 32px;
-  height: 2px;
+  width: 2px;
+  height: 32px;
   background: #e6e6e6;
+  transform: rotate(30deg);
 }
 
 .header__nav {

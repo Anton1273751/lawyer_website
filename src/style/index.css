@@ -609,10 +609,15 @@ button {
   height: 100%;
   flex-direction: column;
   padding-bottom: 24px;
+  position: relative;
 }
-.lawyers__staff:hover {
-  cursor: pointer;
-  cursor: pointer;
+.lawyers__staff-hover {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 10;
+  position: absolute;
+  padding: 20px;
 }
 .lawyers__img {
   width: 100%;

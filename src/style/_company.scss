@@ -1,6 +1,7 @@
 .company {
   &__wrapper {
     display: flex;
+
     padding: 80px 0;
   }
 
@@ -11,8 +12,7 @@
   &__name {
     color: #222;
     font-size: 28px;
-    font-style: normal;
-    font-weight: 800;
+    font-weight: 900;
     line-height: 150%;
   }
   &__name::after {
@@ -26,7 +26,6 @@
   &__title {
     color: #4f8ff0;
     font-size: 28px;
-    font-style: normal;
     font-weight: 900;
     line-height: 150%;
     text-transform: uppercase;
@@ -45,13 +44,14 @@
     line-height: 150%;
   }
   &__img {
-    width: 535px;
-    height: 359px;
+    max-width: 535px;
     margin-left: 64px;
-    background: lightgray;
+  }
+  &__picture {
+    width: 100%;
     object-fit: cover;
     object-position: center;
-    text-overflow: initial;
+    background: lightgray;
   }
   &__btn-inner {
     display: flex;

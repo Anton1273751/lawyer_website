@@ -510,8 +510,7 @@ button {
 .company__name {
   color: #222;
   font-size: 28px;
-  font-style: normal;
-  font-weight: 800;
+  font-weight: 900;
   line-height: 150%;
 }
 .company__name::after {
@@ -525,7 +524,6 @@ button {
 .company__title {
   color: #4f8ff0;
   font-size: 28px;
-  font-style: normal;
   font-weight: 900;
   line-height: 150%;
   text-transform: uppercase;
@@ -543,15 +541,16 @@ button {
   line-height: 150%;
 }
 .company__img {
-  width: 535px;
-  height: 359px;
+  max-width: 535px;
   margin-left: 64px;
-  background: lightgray;
+}
+.company__picture {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  text-overflow: initial;
+  background: lightgray;
 }
 .company__btn-inner {
   display: flex;
@@ -604,14 +603,24 @@ button {
   justify-content: center;
   align-items: center;
 }
+.lawyers__staff {
+  display: flex;
+  width: 312px;
+  height: 100%;
+  flex-direction: column;
+  padding-bottom: 24px;
+}
+.lawyers__staff:hover {
+  cursor: pointer;
+  cursor: pointer;
+}
 .lawyers__img {
   width: 100%;
-  height: 320px;
-  background: lightgrey;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  background: lightgrey;
 }
 .lawyers__title {
   color: #222;
@@ -629,13 +638,6 @@ button {
   height: 3px;
   background: #4f8ff0;
   margin: 10px auto;
-}
-.lawyers__staff {
-  display: flex;
-  width: 312px;
-  height: 390px;
-  flex-direction: column;
-  padding-bottom: 24px;
 }
 .lawyers__subtitle {
   display: block;

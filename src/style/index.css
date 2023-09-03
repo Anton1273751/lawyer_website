@@ -612,12 +612,60 @@ button {
   position: relative;
 }
 .lawyers__staff-hover {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 305px;
   height: 100%;
-  opacity: 0;
-  z-index: 10;
-  position: absolute;
+  inset: 0 0 0 0;
   padding: 20px;
+  position: absolute;
+  background: white;
+  opacity: 0;
+}
+.lawyers__staff-hover:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.5s;
+}
+.lawyers__corner-lt {
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  border-top: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  top: 20px;
+  left: 20px;
+  position: absolute;
+}
+.lawyers__corner-rt {
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  top: 20px;
+  right: 20px;
+  position: absolute;
+}
+.lawyers__corner-lb {
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+  left: 20px;
+  bottom: 20px;
+  position: absolute;
+}
+.lawyers__corner-rb {
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  border-right: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+  right: 20px;
+  bottom: 20px;
+  position: absolute;
 }
 .lawyers__img {
   width: 100%;
@@ -664,6 +712,14 @@ button {
   line-height: 120%;
   margin-top: 24px;
 }
+.lawyers__name-hover {
+  color: #222;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-top: 83px;
+}
 .lawyers__job-title {
   color: #222;
   text-align: center;
@@ -673,6 +729,14 @@ button {
   font-weight: 300;
   line-height: 120%;
   text-transform: lowercase;
+}
+.lawyers__job-title-hover {
+  color: #222;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 120%;
+  margin-top: 10px;
 }
 .lawyers__staff-info {
   display: flex;
@@ -687,6 +751,22 @@ button {
   font-style: normal;
   font-weight: 300;
   line-height: 120%;
+}
+.lawyers__article-hover {
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 120%;
+  margin-top: 40px;
+}
+.lawyers__text-hover {
+  color: #222;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-top: 40px;
 }
 
 .clients {

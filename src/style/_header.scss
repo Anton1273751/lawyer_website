@@ -28,11 +28,14 @@
   }
   &__feedback {
     display: flex;
-    color: #4f8ff0;
+    color: var(--accent-color);
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
+    &:hover {
+      color: darken($color: white, $amount: 10);
+    }
   }
   &__phone {
     color: #fff;
@@ -92,19 +95,20 @@
     padding: 16px 24px;
     align-items: flex-start;
     gap: 10px;
-    border: 2px solid #4f8ff0;
-    background: #4f8ff0;
+    border: 2px solid var(--accent-color);
+    background: var(--accent-color);
     margin-top: 48px;
-  }
-  &__link {
     color: #fff;
     text-align: center;
     font-size: 14px;
-    font-style: normal;
     font-weight: 900;
     line-height: 120%;
     text-transform: uppercase;
+    &:hover {
+      @include darken-button;
+    }
   }
+
   &__slides {
     max-width: 1320px;
     width: 100%;
@@ -135,7 +139,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 10px;
   }
   &__block-line {
     width: 2px;

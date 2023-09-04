@@ -7,6 +7,23 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  &__about {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  &__line {
+    width: 2px;
+    height: 32px;
+    background: var(--accent-color);
+    transform: rotate(30deg);
+  }
+
   &__title {
     color: #222;
     font-size: 28px;
@@ -29,7 +46,7 @@
     gap: 24px;
   }
   &__info {
-    width: 648px;
+    max-width: 648px;
     height: 100%;
     padding: 32px;
     background: #fff;
@@ -54,6 +71,21 @@
   &__img {
     object-fit: cover;
     object-position: center;
+    border-radius: 50%;
+    background: lightgray;
+  }
+  &__company {
+    color: #222;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 120%;
+  }
+
+  &__name {
+    color: #222;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
   }
   &__article {
     color: #222;
@@ -85,6 +117,9 @@
     font-weight: 900;
     line-height: 120%;
     text-transform: uppercase;
+    &:hover {
+      @include darken-button;
+    }
   }
   &__write-reviesws {
     display: flex;
@@ -100,5 +135,8 @@
     font-weight: 900;
     line-height: 120%;
     text-transform: uppercase;
+    &:hover {
+      @include darken-gray;
+    }
   }
 }

@@ -23,7 +23,7 @@
     top: 30px;
     width: 50px;
     height: 3px;
-    background: #4f8ff0;
+    background: var(--accent-color);
     margin: 10px auto 0;
   }
   &__servicetext {
@@ -98,24 +98,23 @@
 
   &__btn {
     display: flex;
+    align-items: center;
     width: 138px;
     height: 49px;
-    padding: 16px 24px;
-    align-items: flex-start;
-    gap: 10px;
-    border: 2px solid #4f8ff0;
-    background: #4f8ff0;
+    border: 2px solid var(--accent-color);
+    background: var(--accent-color);
     justify-content: center;
     margin-top: 48px;
-  }
-  &__link {
     color: #fff;
-    text-align: center;
     font-size: 14px;
-    font-style: normal;
     font-weight: 900;
     line-height: 120%;
+    text-transform: uppercase;
+    &:hover {
+      @include darken-button;
+    }
   }
+
   &__corner-lt {
     display: block;
     width: 35px;

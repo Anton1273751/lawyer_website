@@ -1152,7 +1152,7 @@ button {
   height: 100%;
   flex-direction: column;
 }
-.footer__img {
+.footer__foto {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;

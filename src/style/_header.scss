@@ -117,11 +117,13 @@
   }
   &__slides-wrap {
     display: flex;
+    cursor: pointer;
     justify-content: space-between;
     width: 100%;
   }
   &__block-wrap {
     display: flex;
+    cursor: pointer;
     align-items: end;
     gap: 8px;
   }

@@ -353,6 +353,11 @@ button {
   text-decoration-line: underline;
 }
 
+@media (max-width: 1110px) {
+  .nav__link {
+    display: none;
+  }
+}
 .card {
   background: #f7f7f7;
   padding: 80px 0;

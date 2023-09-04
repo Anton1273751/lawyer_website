@@ -50,3 +50,10 @@
     text-decoration-line: underline;
   }
 }
+@media (max-width: 1110px) {
+  .nav {
+    &__link {
+      display: none;
+    }
+  }
+}

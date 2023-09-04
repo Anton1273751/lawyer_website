@@ -43,6 +43,7 @@
     padding-bottom: 24px;
     flex-direction: column;
     background: white;
+    position: relative;
   }
   &__img {
     max-width: 424px;
@@ -50,6 +51,7 @@
     object-position: center;
     background: lightgrey;
   }
+
   &__card-title {
     margin-top: 24px;
     @include cardMaterials-title;

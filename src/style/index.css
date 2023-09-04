@@ -979,6 +979,7 @@ button {
   padding-bottom: 24px;
   flex-direction: column;
   background: white;
+  position: relative;
 }
 .materials__img {
   max-width: 424px;

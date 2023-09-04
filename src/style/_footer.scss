@@ -111,6 +111,12 @@
     flex-direction: column;
   }
 
+  &__img {
+    object-fit: cover;
+    object-position: center;
+    background: lightgray;
+    border-radius: 50%;
+  }
   &__leading-lawyer {
     display: flex;
     gap: 24px;
@@ -143,15 +149,17 @@
     align-items: center;
     justify-content: center;
     padding: 16px 24px;
-    border: #4f8ff0;
-    background: #4f8ff0;
+    border: var(--accent-color);
+    background: var(--accent-color);
     color: #fff;
     font-size: 14px;
-    font-style: normal;
     font-weight: 900;
     line-height: 120%;
     text-transform: uppercase;
     margin-top: 24px;
+    &:hover {
+      @include darken-button;
+    }
   }
   &__aside {
     height: 49px;

@@ -509,6 +509,7 @@ button {
 .company__info {
   display: flex;
   flex-direction: column;
+  background: white;
 }
 .company__designation {
   color: #222;
@@ -621,6 +622,7 @@ button {
   flex-direction: column;
   padding-bottom: 24px;
   position: relative;
+  background: white;
 }
 .lawyers__staff-hover {
   display: flex;
@@ -782,7 +784,7 @@ button {
 
 .clients {
   padding: 80px 0;
-  height: 588px;
+  max-height: 588px;
   background: lightgray;
   background-image: url(/src/images/clients/fonblock.webp);
   background-position: center;
@@ -967,10 +969,19 @@ button {
 }
 .materials__card {
   display: flex;
-  width: 421px;
+  max-width: 421px;
   height: 100%;
   padding-bottom: 24px;
   flex-direction: column;
+  background: white;
+}
+.materials__img {
+  max-width: 424px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  background: lightgrey;
 }
 .materials__card-title {
   margin-top: 24px;
@@ -1013,6 +1024,9 @@ button {
   text-transform: uppercase;
   margin: 0 auto;
   margin-top: 48px;
+}
+.materials__news:hover {
+  background: #115ac8;
 }
 
 .footer {
@@ -1138,6 +1152,14 @@ button {
   height: 100%;
   flex-direction: column;
 }
+.footer__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  background: lightgray;
+  border-radius: 50%;
+}
 .footer__leading-lawyer {
   display: flex;
   gap: 24px;
@@ -1170,15 +1192,17 @@ button {
   align-items: center;
   justify-content: center;
   padding: 16px 24px;
-  border: #4f8ff0;
-  background: #4f8ff0;
+  border: var(--accent-color);
+  background: var(--accent-color);
   color: #fff;
   font-size: 14px;
-  font-style: normal;
   font-weight: 900;
   line-height: 120%;
   text-transform: uppercase;
   margin-top: 24px;
+}
+.footer__btn:hover {
+  background: #115ac8;
 }
 .footer__aside {
   height: 49px;

@@ -38,10 +38,17 @@
   }
   &__card {
     display: flex;
-    width: 421px;
+    max-width: 421px;
     height: 100%;
     padding-bottom: 24px;
     flex-direction: column;
+    background: white;
+  }
+  &__img {
+    max-width: 424px;
+    object-fit: cover;
+    object-position: center;
+    background: lightgrey;
   }
   &__card-title {
     margin-top: 24px;
@@ -80,5 +87,8 @@
     text-transform: uppercase;
     margin: 0 auto;
     margin-top: 48px;
+    &:hover {
+      @include darken-button;
+    }
   }
 }

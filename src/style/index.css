@@ -510,13 +510,13 @@ button {
   display: flex;
   flex-direction: column;
 }
-.company__name {
+.company__designation {
   color: #222;
   font-size: 28px;
   font-weight: 900;
   line-height: 150%;
 }
-.company__name::after {
+.company__designation::after {
   content: "";
   display: block;
   width: 50px;
@@ -546,6 +546,11 @@ button {
 .company__img {
   max-width: 535px;
   margin-left: 64px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  background: lightgray;
 }
 .company__picture {
   width: 100%;
@@ -674,7 +679,7 @@ button {
   position: absolute;
 }
 .lawyers__img {
-  width: 100%;
+  max-width: 312px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;

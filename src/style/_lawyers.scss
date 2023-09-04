@@ -82,7 +82,7 @@
   }
 
   &__img {
-    width: 100%;
+    max-width: 312px;
     object-fit: cover;
     object-position: center;
     background: lightgrey;

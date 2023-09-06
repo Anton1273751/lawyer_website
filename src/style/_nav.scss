@@ -1,5 +1,5 @@
 .header__nav {
-  height: 112px;
+  max-height: 112px;
   margin: 0 auto;
 }
 
@@ -21,6 +21,7 @@
   }
   &__wrapper {
     display: flex;
+    padding: 18px 18px;
     width: 100%;
 
     justify-content: space-between;
@@ -41,7 +42,7 @@
     justify-content: center;
   }
   &__btn:hover {
-    color: #4f8ff0;
+    color: var(--accent-color);
     text-align: center;
     font-size: 18px;
     font-style: normal;
@@ -52,6 +53,9 @@
 }
 @media (max-width: 1110px) {
   .nav {
+    &__wrapper {
+      padding: 19px 19px;
+    }
     &__link {
       display: none;
     }

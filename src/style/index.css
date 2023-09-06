@@ -146,11 +146,9 @@ button {
 
 .header__menu {
   display: flex;
-  width: 100%;
-  margin: 0 auto;
-  height: 52px;
+  max-height: 52px;
+  padding: 18px 0;
   flex-shrink: 0;
-  align-items: center;
   background: #010101;
 }
 .header__wrapper {
@@ -184,20 +182,18 @@ button {
 .header__phone {
   color: #fff;
   font-size: 14px;
-  font-style: normal;
   font-weight: 600;
   line-height: 120%;
 }
 .header__mail {
   color: #fff;
   font-size: 14px;
-  font-style: normal;
   font-weight: 600;
   line-height: 120%;
 }
 .header__lead {
   display: flex;
-  height: 820px;
+  max-height: 820px;
   flex-direction: column;
   align-items: center;
   background: lightgrey;
@@ -208,17 +204,19 @@ button {
 }
 .header__text {
   color: #fff;
+  white-space: nowrap;
   margin-top: 150px;
   font-size: 30px;
-  font-style: normal;
+  text-align: center;
   font-weight: 300;
   line-height: 150%;
   text-transform: uppercase;
 }
 .header__headline {
   color: var(--accent-color);
+  white-space: nowrap;
   font-size: 56px;
-  font-style: normal;
+  text-align: center;
   font-weight: 600;
   line-height: 150%;
   text-transform: uppercase;
@@ -253,10 +251,12 @@ button {
   background: #115ac8;
 }
 .header__slides {
+  display: flex;
+  justify-content: center;
   max-width: 1320px;
   width: 100%;
-  padding: 0 15px;
   margin-top: 192px;
+  padding-bottom: 36px;
 }
 .header__slides-wrap {
   display: flex;
@@ -293,8 +293,27 @@ button {
   transform: rotate(30deg);
 }
 
+@media (max-width: 1110px) {
+  .header__slides {
+    margin-top: 36px;
+  }
+  .header__button {
+    margin-top: 46px;
+  }
+  .header__article {
+    font-size: 18px;
+    max-width: 696px;
+  }
+  .header__headline {
+    font-size: 50px;
+  }
+  .header__text {
+    margin-top: 66px;
+    font-size: 24px;
+  }
+}
 .header__nav {
-  height: 112px;
+  max-height: 112px;
   margin: 0 auto;
 }
 
@@ -326,6 +345,7 @@ button {
 }
 .nav__wrapper {
   display: flex;
+  padding: 18px 18px;
   width: 100%;
   justify-content: space-between;
 }
@@ -344,7 +364,7 @@ button {
   justify-content: center;
 }
 .nav__btn:hover {
-  color: #4f8ff0;
+  color: var(--accent-color);
   text-align: center;
   font-size: 18px;
   font-style: normal;
@@ -354,6 +374,9 @@ button {
 }
 
 @media (max-width: 1110px) {
+  .nav__wrapper {
+    padding: 19px 19px;
+  }
   .nav__link {
     display: none;
   }

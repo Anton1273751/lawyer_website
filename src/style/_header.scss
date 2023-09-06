@@ -1,11 +1,9 @@
 .header {
   &__menu {
     display: flex;
-    width: 100%;
-    margin: 0 auto;
-    height: 52px;
+    max-height: 52px;
+    padding: 18px 0;
     flex-shrink: 0;
-    align-items: center;
     background: #010101;
   }
   &__wrapper {
@@ -40,20 +38,20 @@
   &__phone {
     color: #fff;
     font-size: 14px;
-    font-style: normal;
+
     font-weight: 600;
     line-height: 120%;
   }
   &__mail {
     color: #fff;
     font-size: 14px;
-    font-style: normal;
+
     font-weight: 600;
     line-height: 120%;
   }
   &__lead {
     display: flex;
-    height: 820px;
+    max-height: 820px;
     flex-direction: column;
     align-items: center;
     background: lightgrey;
@@ -64,17 +62,19 @@
   }
   &__text {
     color: #fff;
+    white-space: nowrap;
     margin-top: 150px;
     font-size: 30px;
-    font-style: normal;
+    text-align: center;
     font-weight: 300;
     line-height: 150%;
     text-transform: uppercase;
   }
   &__headline {
     color: var(--accent-color);
+    white-space: nowrap;
     font-size: 56px;
-    font-style: normal;
+    text-align: center;
     font-weight: 600;
     line-height: 150%;
     text-transform: uppercase;
@@ -110,10 +110,12 @@
   }
 
   &__slides {
+    display: flex;
+    justify-content: center;
     max-width: 1320px;
     width: 100%;
-    padding: 0 15px;
     margin-top: 192px;
+    padding-bottom: 36px;
   }
   &__slides-wrap {
     display: flex;
@@ -148,5 +150,28 @@
     height: 32px;
     background: #e6e6e6;
     transform: rotate(30deg);
+  }
+}
+@media (max-width: 1110px) {
+  .header {
+    &__slides {
+      margin-top: 36px;
+    }
+    &__button {
+      margin-top: 46px;
+    }
+    &__article {
+      font-size: 18px;
+      max-width: 696px;
+    }
+    &__headline {
+      font-size: 50px;
+    }
+    &__text {
+      margin-top: 66px;
+      font-size: 24px;
+    }
+    &__lead {
+    }
   }
 }

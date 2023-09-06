@@ -1,6 +1,6 @@
 .footer {
   background: #222;
-  height: 584px;
+  max-height: 584px;
   padding: 80px 0;
 
   .aside {
@@ -15,7 +15,7 @@
   }
   &__article {
     @include accent-article;
-    max-width: 820px;
+    max-width: 862px;
     height: 100%;
   }
   &__head {

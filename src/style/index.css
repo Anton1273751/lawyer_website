@@ -742,7 +742,7 @@ button {
   background: #bababa;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
   .company__wrapepr {
     padding: 60px 0;
     align-items: center;

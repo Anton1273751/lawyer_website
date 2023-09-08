@@ -799,7 +799,7 @@ button {
 }
 .lawyers__staff {
   display: flex;
-  width: 312px;
+  max-width: 312px;
   height: 100%;
   flex-direction: column;
   padding-bottom: 24px;
@@ -993,6 +993,19 @@ button {
   .lawyers__info {
     margin-top: 29px;
   }
+  .lawyers__staff {
+    max-width: 250px;
+    height: 100%;
+  }
+  .lawyers__name-hover {
+    margin-top: 40px;
+  }
+  .lawyers__article-hover {
+    margin-top: 20px;
+  }
+  .lawyers__text-hover {
+    margin-top: 20px;
+  }
 }
 .clients {
   padding: 80px 0;
@@ -1142,11 +1155,8 @@ button {
   .clients__title {
     font-size: 24px;
   }
-  .clients__title {
-    font-size: 24px;
-  }
   .clients__card {
-    overflow: scroll;
+    flex-wrap: nowrap;
   }
   .clients__info {
     max-width: 576px;
@@ -1198,7 +1208,7 @@ button {
 }
 .materials__card {
   display: flex;
-  max-width: 421px;
+  max-width: 424px;
   height: 100%;
   padding-bottom: 24px;
   flex-direction: column;
@@ -1329,6 +1339,26 @@ button {
   background: #115ac8;
 }
 
+@media (max-width: 1110px) {
+  .materials {
+    padding: 60px 0;
+  }
+  .materials__title {
+    font-size: 24px;
+  }
+  .materials__subtitle {
+    max-width: 696px;
+    margin-top: 30px;
+  }
+  .materials__card-wrapper {
+    margin-top: 29px;
+    overflow: scroll;
+    gap: 24px;
+  }
+  .materials__card {
+    max-width: 336px;
+  }
+}
 .footer {
   background: #222;
   max-height: 584px;

@@ -38,7 +38,7 @@
   }
   &__card {
     display: flex;
-    max-width: 421px;
+    max-width: 424px;
     height: 100%;
     padding-bottom: 24px;
     flex-direction: column;
@@ -164,6 +164,26 @@
     margin-top: 48px;
     &:hover {
       @include darken-button;
+    }
+  }
+}
+@media (max-width: 1110px) {
+  .materials {
+    padding: 60px 0;
+    &__title {
+      font-size: 24px;
+    }
+    &__subtitle {
+      max-width: 696px;
+      margin-top: 30px;
+    }
+    &__card-wrapper {
+      margin-top: 29px;
+      overflow: scroll;
+      gap: 24px;
+    }
+    &__card {
+      max-width: 336px;
     }
   }
 }

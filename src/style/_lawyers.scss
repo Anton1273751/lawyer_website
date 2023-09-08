@@ -16,7 +16,7 @@
 
   &__staff {
     display: flex;
-    width: 312px;
+    max-width: 312px;
     height: 100%;
     flex-direction: column;
     padding-bottom: 24px;
@@ -212,6 +212,19 @@
     }
     &__info {
       margin-top: 29px;
+    }
+    &__staff {
+      max-width: 250px;
+      height: 100%;
+    }
+    &__name-hover {
+      margin-top: 40px;
+    }
+    &__article-hover {
+      margin-top: 20px;
+    }
+    &__text-hover {
+      margin-top: 20px;
     }
   }
 }

@@ -595,7 +595,7 @@ button {
   }
   .card__info {
     max-width: 336px;
-    height: 229px;
+    max-height: 229px;
     padding: 30px 40px 32px 32px;
     overflow: hidden;
   }
@@ -1039,7 +1039,7 @@ button {
 .clients__card {
   display: flex;
   margin-top: 48px;
-  gap: 24px;
+  justify-content: space-between;
 }
 .clients__info {
   max-width: 648px;
@@ -1135,6 +1135,23 @@ button {
   background: #bababa;
 }
 
+@media (max-width: 1110px) {
+  .clients {
+    padding: 60px 0;
+  }
+  .clients__title {
+    font-size: 24px;
+  }
+  .clients__title {
+    font-size: 24px;
+  }
+  .clients__card {
+    overflow: scroll;
+  }
+  .clients__info {
+    max-width: 576px;
+  }
+}
 .materials {
   padding: 80px 0;
   background: #fff;

@@ -36,7 +36,7 @@
   }
   &__wrapper {
     display: flex;
-    align-items: center;
+
     margin-top: 48px;
     justify-content: center;
     flex-wrap: wrap;
@@ -158,6 +158,9 @@
 
 @media (max-width: 1110px) {
   .card {
+    &__wrapper {
+      padding: 60px 0;
+    }
     &__texttitle {
       font-size: 24px;
     }
@@ -169,6 +172,22 @@
       width: 100%;
       flex-wrap: wrap;
     }
+    &__corner-lt {
+      left: 20px;
+      top: 20px;
+    }
+    &__corner-rt {
+      right: 20px;
+      top: 20px;
+    }
+    &__corner-lb {
+      left: 20px;
+      bottom: 20px;
+    }
+    &__corner-rb {
+      right: 20px;
+      bottom: 20px;
+    }
     &__info {
       max-width: 336px;
       height: 229px;
@@ -177,6 +196,9 @@
     }
     &__text {
       font-weight: 300;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
       overflow: hidden;
     }
   }
@@ -190,13 +212,39 @@
       font-size: 14px;
     }
     &__wrapper {
-      flex-wrap: nowrap;
       margin-top: 24px;
+      flex-wrap: nowrap;
+      justify-content: start;
       overflow: scroll;
     }
     &__info {
       max-width: 250px;
       max-height: 215px;
+      padding: 24px 32px 16px 16px;
+    }
+    &__text {
+      font-weight: 300;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &__corner-lt {
+      left: 10px;
+      top: 10px;
+    }
+    &__corner-rt {
+      right: 10px;
+      top: 10px;
+    }
+    &__corner-lb {
+      left: 10px;
+      bottom: 10px;
+    }
+    &__corner-rb {
+      right: 10px;
+      bottom: 10px;
     }
   }
 }

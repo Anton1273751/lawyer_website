@@ -108,7 +108,7 @@
 
   &__subtitle {
     display: block;
-    width: 920px;
+    max-width: 920px;
     color: #222;
     text-align: center;
     margin-top: 24px;
@@ -182,5 +182,16 @@
     font-weight: 600;
     line-height: 120%;
     margin-top: 40px;
+  }
+}
+
+@media (max-width: 1110px) {
+  .lawyers {
+    &__title {
+      font-size: 20px;
+    }
+    &__subtitle {
+      max-width: 696px;
+    }
   }
 }

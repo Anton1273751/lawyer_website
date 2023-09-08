@@ -18,12 +18,19 @@
     gap: 24px;
   }
 
-  &__info {
+  &__phone-wrap {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
   }
+  &__mail-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
   &__feedback {
     display: flex;
     color: var(--accent-color);
@@ -166,12 +173,40 @@
     }
     &__headline {
       font-size: 50px;
+      max-width: 573px;
     }
     &__text {
       margin-top: 66px;
       font-size: 24px;
     }
-    &__lead {
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    &__text {
+      font-size: 18px;
+      max-width: 271px;
+    }
+    &__headline {
+      font-size: 25px;
+      max-width: 342px;
+    }
+    &__article {
+      font-size: 16px;
+      max-width: 342px;
+    }
+    &__mail-wrap {
+      display: none;
+    }
+    &__slides {
+      display: none;
+    }
+    &__button {
+      margin-top: 32px;
+      margin-bottom: 60px;
+    }
+    &__text {
+      margin-top: 60px;
     }
   }
 }

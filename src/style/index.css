@@ -162,7 +162,13 @@ button {
   display: flex;
   gap: 24px;
 }
-.header__info {
+.header__phone-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.header__mail-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -306,10 +312,38 @@ button {
   }
   .header__headline {
     font-size: 50px;
+    max-width: 573px;
   }
   .header__text {
     margin-top: 66px;
     font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .header__text {
+    font-size: 18px;
+    max-width: 271px;
+  }
+  .header__headline {
+    font-size: 25px;
+    max-width: 342px;
+  }
+  .header__article {
+    font-size: 16px;
+    max-width: 342px;
+  }
+  .header__mail-wrap {
+    display: none;
+  }
+  .header__slides {
+    display: none;
+  }
+  .header__button {
+    margin-top: 32px;
+    margin-bottom: 60px;
+  }
+  .header__text {
+    margin-top: 60px;
   }
 }
 .header__nav {
@@ -393,7 +427,6 @@ button {
 .card__texttitle {
   color: #222;
   font-size: 28px;
-  font-style: normal;
   font-weight: 800;
   line-height: 150%;
   text-transform: uppercase;
@@ -412,7 +445,6 @@ button {
   color: #222;
   text-align: center;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 120%;
   margin-top: 24px;
@@ -429,8 +461,8 @@ button {
 }
 .card__info {
   display: flex;
-  width: 424px;
-  height: 250px;
+  max-width: 424px;
+  max-height: 250px;
   padding: 50px 32px;
   flex-direction: column;
   align-items: center;
@@ -476,6 +508,7 @@ button {
   align-items: center;
   width: 138px;
   height: 49px;
+  margin: 0 auto;
   border: 2px solid var(--accent-color);
   background: var(--accent-color);
   justify-content: center;
@@ -530,6 +563,46 @@ button {
   bottom: 30px;
 }
 
+@media (max-width: 1110px) {
+  .card__texttitle {
+    font-size: 24px;
+  }
+  .card__servicetex {
+    font-size: 16px;
+    max-width: 696px;
+  }
+  .card__wrapper {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .card__info {
+    max-width: 336px;
+    height: 229px;
+    padding: 30px 40px 32px 32px;
+    overflow: hidden;
+  }
+  .card__text {
+    font-weight: 300;
+    overflow: hidden;
+  }
+}
+@media (max-width: 768px) {
+  .card__texttitle {
+    font-size: 20px;
+  }
+  .card__servicetext {
+    font-size: 14px;
+  }
+  .card__wrapper {
+    flex-wrap: nowrap;
+    margin-top: 24px;
+    overflow: scroll;
+  }
+  .card__info {
+    max-width: 250px;
+    max-height: 215px;
+  }
+}
 .company__wrapper {
   display: flex;
   padding: 80px 0;

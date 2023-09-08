@@ -187,11 +187,31 @@
 
 @media (max-width: 1110px) {
   .lawyers {
+    padding: 60px 0;
+    &__title {
+      font-size: 24px;
+    }
+    &__subtitle {
+      max-width: 696px;
+    }
+    &__info {
+      overflow: scroll;
+      gap: 24px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .lawyers {
+    padding: 40px 0;
     &__title {
       font-size: 20px;
     }
     &__subtitle {
-      max-width: 696px;
+      max-width: 342px;
+      margin-top: 16px;
+    }
+    &__info {
+      margin-top: 29px;
     }
   }
 }

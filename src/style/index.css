@@ -965,11 +965,33 @@ button {
 }
 
 @media (max-width: 1110px) {
+  .lawyers {
+    padding: 60px 0;
+  }
+  .lawyers__title {
+    font-size: 24px;
+  }
+  .lawyers__subtitle {
+    max-width: 696px;
+  }
+  .lawyers__info {
+    overflow: scroll;
+    gap: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .lawyers {
+    padding: 40px 0;
+  }
   .lawyers__title {
     font-size: 20px;
   }
   .lawyers__subtitle {
-    max-width: 696px;
+    max-width: 342px;
+    margin-top: 16px;
+  }
+  .lawyers__info {
+    margin-top: 29px;
   }
 }
 .clients {

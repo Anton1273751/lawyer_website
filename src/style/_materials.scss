@@ -33,6 +33,7 @@
   }
   &__card-wrapper {
     display: flex;
+    justify-content: center;
     margin-top: 48px;
     justify-content: space-between;
   }
@@ -40,19 +41,20 @@
     display: flex;
     max-width: 424px;
     height: 100%;
-    padding-bottom: 24px;
+
     flex-direction: column;
     background: white;
   }
   &__img {
     max-width: 421px;
+    height: 100%;
     object-fit: cover;
     object-position: center;
     background: lightgrey;
   }
 
   &__img-wrap {
-    width: 100%;
+    max-width: 421px;
     height: 100%;
     position: relative;
   }
@@ -180,10 +182,11 @@
     &__card-wrapper {
       margin-top: 29px;
       overflow: scroll;
-      gap: 24px;
+      gap: 14px;
     }
     &__card {
       max-width: 336px;
+      max-height: 481px;
     }
   }
 }

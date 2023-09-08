@@ -1203,6 +1203,7 @@ button {
 }
 .materials__card-wrapper {
   display: flex;
+  justify-content: center;
   margin-top: 48px;
   justify-content: space-between;
 }
@@ -1210,12 +1211,12 @@ button {
   display: flex;
   max-width: 424px;
   height: 100%;
-  padding-bottom: 24px;
   flex-direction: column;
   background: white;
 }
 .materials__img {
   max-width: 421px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -1223,7 +1224,7 @@ button {
   background: lightgrey;
 }
 .materials__img-wrap {
-  width: 100%;
+  max-width: 421px;
   height: 100%;
   position: relative;
 }
@@ -1353,10 +1354,11 @@ button {
   .materials__card-wrapper {
     margin-top: 29px;
     overflow: scroll;
-    gap: 24px;
+    gap: 14px;
   }
   .materials__card {
     max-width: 336px;
+    max-height: 481px;
   }
 }
 .footer {

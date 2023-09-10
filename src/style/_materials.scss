@@ -33,16 +33,22 @@
   }
   &__card-wrapper {
     display: flex;
-    justify-content: center;
     margin-top: 48px;
     gap: 24px;
   }
   &__card {
     display: flex;
     max-width: 421px;
+    min-width: 336px;
     flex-direction: column;
     background: white;
     cursor: pointer;
+    &:hover .materials__card-title {
+      color: var(--accent-color);
+    }
+    &:hover .materials__hover {
+      opacity: 1;
+    }
   }
   &__img {
     max-width: 421px;
@@ -51,7 +57,6 @@
     background: lightgrey;
     &-wrap {
       max-width: 421px;
-      height: 100%;
       position: relative;
     }
   }
@@ -60,10 +65,8 @@
     position: absolute;
     inset: 0 0 0 0;
     opacity: 0;
-    &:hover {
-      cursor: pointer;
-      opacity: 1;
-    }
+    background: rgba(79, 143, 240, 0.4);
+    transition: 0.7s;
   }
 
   &__corner-lt {
@@ -123,10 +126,6 @@
   &__card-title {
     margin-top: 24px;
     @include cardMaterials-title;
-    &:hover {
-      cursor: pointer;
-      color: var(--accent-color);
-    }
   }
   &__date {
     margin-top: 16px;
@@ -166,7 +165,7 @@
     }
   }
 }
-@media (max-width: 1110px) {
+@media (max-width: 1235px) {
   .materials {
     padding: 60px 0;
     &__title {
@@ -179,11 +178,29 @@
     &__card-wrapper {
       margin-top: 29px;
       overflow: scroll;
-      gap: 14px;
     }
     &__card {
       max-width: 336px;
       max-height: 481px;
+      padding-bottom: 16px;
+    }
+    &__img {
+      max-width: 336px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .materials {
+    padding: 40px 0;
+    &__title {
+      font-size: 20px;
+    }
+    &__subtitle {
+      font-size: 14px;
+      max-width: 342px;
+    }
+    &__card {
+      max-width: 250px;
     }
   }
 }

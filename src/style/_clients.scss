@@ -44,11 +44,11 @@
   &__card {
     display: flex;
     margin-top: 48px;
-    justify-content: space-between;
+    gap: 24px;
   }
   &__info {
     max-width: 648px;
-    height: 100%;
+    min-width: 576px;
     padding: 32px;
     background: #fff;
     box-shadow: 2px 2px 10px 0px rgba(33, 33, 33, 0.15);
@@ -92,7 +92,6 @@
     color: #222;
     font-size: 14px;
     margin-top: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 150%;
     text-overflow: ellipsis;
@@ -148,10 +147,40 @@
       font-size: 24px;
     }
     &__card {
-      flex-wrap: nowrap;
+      overflow: scroll;
+    }
+    &__reviesws {
+      margin-top: 36px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .clients {
+    padding: 40px 0;
+    &__title {
+      font-size: 20px;
+    }
+    &__card {
+      margin-top: 24px;
     }
     &__info {
-      max-width: 576px;
+      padding: 24px;
+      min-width: 340px;
+      max-height: 303px;
+    }
+    &__scroll {
+      display: none;
+    }
+    &__reviesws {
+      margin-top: 24px;
+      flex-direction: column;
+      gap: 16px;
+    }
+    &__all-reviesws {
+      justify-content: center;
+    }
+    &__write-reviesws {
+      justify-content: center;
     }
   }
 }

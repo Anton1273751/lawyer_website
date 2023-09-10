@@ -35,33 +35,30 @@
     display: flex;
     justify-content: center;
     margin-top: 48px;
-    justify-content: space-between;
+    gap: 24px;
   }
   &__card {
     display: flex;
-    max-width: 424px;
-    height: 100%;
-
+    max-width: 421px;
     flex-direction: column;
     background: white;
+    cursor: pointer;
   }
   &__img {
     max-width: 421px;
-    height: 100%;
     object-fit: cover;
     object-position: center;
     background: lightgrey;
-  }
-
-  &__img-wrap {
-    max-width: 421px;
-    height: 100%;
-    position: relative;
+    &-wrap {
+      max-width: 421px;
+      height: 100%;
+      position: relative;
+    }
   }
 
   &__hover {
-    max-width: 421px;
-    height: 100%;
+    position: absolute;
+    inset: 0 0 0 0;
     opacity: 0;
     &:hover {
       cursor: pointer;

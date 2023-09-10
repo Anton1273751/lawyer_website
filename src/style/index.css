@@ -1406,6 +1406,10 @@ button {
   }
   .materials__card {
     max-width: 250px;
+    max-width: 411px;
+  }
+  .materials__news {
+    margin-top: 40px;
   }
 }
 .footer {

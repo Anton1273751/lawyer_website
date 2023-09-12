@@ -1,7 +1,6 @@
 .footer {
   background: #222;
-  max-height: 584px;
-  padding: 80px 0;
+  padding: 80px 0 0;
 
   .aside {
     height: 100%;
@@ -89,17 +88,16 @@
   }
   &__feedback {
     display: flex;
+    align-items: start;
     flex-direction: column;
     gap: 16px;
   }
   &__link {
     color: #fff;
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
     line-height: 120%;
     text-transform: uppercase;
-    margin-left: 141px;
   }
   &__link:hover {
     color: #4f8ff0;
@@ -163,7 +161,6 @@
     }
   }
   &__aside {
-    max-height: 49px;
     padding: 16px 0;
     background: #181818;
   }
@@ -194,13 +191,17 @@
     &__img {
       width: 45px;
       height: 45px;
+      & svg {
+        width: 24px;
+        height: 24px;
+      }
     }
     &__feedback {
       display: none;
     }
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 754px) {
   .footer {
     padding: 40px 0;
     max-height: 717px;
@@ -218,8 +219,11 @@
     }
     &__aside {
       max-height: 74px;
+
+      padding: 16px 0;
     }
-    &__basemement {
+    &__basement {
+      flex-direction: column;
       gap: 8px;
     }
   }

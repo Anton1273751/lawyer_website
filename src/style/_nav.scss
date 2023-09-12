@@ -23,14 +23,13 @@
     display: flex;
     padding: 18px 18px;
     width: 100%;
-
+    align-items: center;
     justify-content: space-between;
   }
   &__btn {
     color: #fff;
     text-align: center;
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
     line-height: 120%;
   }
@@ -40,14 +39,10 @@
     gap: 32px;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
   &__btn:hover {
     color: var(--accent-color);
-    text-align: center;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
     text-decoration-line: underline;
   }
 }

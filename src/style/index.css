@@ -235,7 +235,6 @@ button {
   color: #fff;
   text-align: center;
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
   line-height: 120%;
   margin-top: 8px;
@@ -383,13 +382,13 @@ button {
   display: flex;
   padding: 18px 18px;
   width: 100%;
+  align-items: center;
   justify-content: space-between;
 }
 .nav__btn {
   color: #fff;
   text-align: center;
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
   line-height: 120%;
 }
@@ -398,14 +397,10 @@ button {
   gap: 32px;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .nav__btn:hover {
   color: var(--accent-color);
-  text-align: center;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 120%;
   text-decoration-line: underline;
 }
 
@@ -415,6 +410,55 @@ button {
   }
   .nav__link {
     display: none;
+  }
+}
+.burger {
+  display: none;
+  position: relative;
+}
+.burger__check {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  opacity: 0.2;
+  cursor: pointer;
+  z-index: 100px;
+}
+.burger__check:checked ~ .burger__list {
+  transform: none;
+}
+.burger__check:checked {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+}
+.burger__list {
+  position: fixed;
+  padding: 38px 26px;
+  background: #222;
+  width: 290px;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: 0.3s;
+  z-index: 90px;
+}
+.burger__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+.burger__link {
+  display: block;
+  padding: 12px 0;
+  text-align: left;
+}
+
+@media (max-width: 1110px) {
+  .burger {
+    display: block;
   }
 }
 .card {

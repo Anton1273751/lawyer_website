@@ -1,0 +1,49 @@
+.burger {
+  display: none;
+  position: relative;
+  &__check {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    opacity: 0.2;
+    cursor: pointer;
+    z-index: 100px;
+    &:checked ~ .burger__list {
+      transform: none;
+    }
+    &:checked {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+    }
+  }
+
+  &__list {
+    position: fixed;
+    padding: 38px 26px;
+    background: #222;
+    width: 290px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: 0.3s;
+    z-index: 90px;
+  }
+  &__close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+  }
+  &__link {
+    display: block;
+    padding: 12px 0;
+    text-align: left;
+  }
+}
+@media (max-width: 1110px) {
+  .burger {
+    display: block;
+  }
+}

@@ -1465,7 +1465,7 @@ button {
 }
 .footer__contacts {
   display: flex;
-  margin-top: 68px;
+  padding: 80px 0;
   justify-content: space-between;
 }
 .footer__wrap {
@@ -1477,6 +1477,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   width: 55px;
   height: 55px;
   flex-shrink: 0;
@@ -1531,7 +1532,7 @@ button {
 }
 .footer__card {
   display: flex;
-  width: 424px;
+  max-width: 424px;
   height: 100%;
   flex-direction: column;
 }
@@ -1565,7 +1566,7 @@ button {
 .footer__card-text {
   color: #fff;
   font-size: 14px;
-  font-style: normal;
+  overflow: hidden;
   font-weight: 400;
   line-height: 150%;
   margin-top: 16px;
@@ -1588,19 +1589,64 @@ button {
   background: #115ac8;
 }
 .footer__aside {
-  height: 49px;
+  max-height: 49px;
+  padding: 16px 0;
   background: #181818;
-  margin-top: 100px;
 }
 .footer__basement {
   display: flex;
-  padding: 16px 0;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
   justify-content: space-between;
 }
 .footer__aside-text {
   color: #fff;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 120%;
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    padding: 60px 0;
+    max-height: 517px;
+  }
+  .footer__article {
+    display: none;
+  }
+  .footer__text {
+    font-size: 14px;
+  }
+  .footer__img {
+    width: 45px;
+    height: 45px;
+  }
+  .footer__feedback {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0;
+    max-height: 717px;
+  }
+  .footer__contacts {
+    flex-direction: column;
+  }
+  .footer__lawyer {
+    margin-top: 47px;
+  }
+  .footer__head {
+    justify-content: center;
+  }
+  .footer__contacts {
+    padding: 60px 0;
+  }
+  .footer__aside {
+    max-height: 74px;
+  }
+  .footer__basemement {
+    gap: 8px;
+  }
 }/*# sourceMappingURL=index.css.map */

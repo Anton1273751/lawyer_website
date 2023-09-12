@@ -5,7 +5,7 @@
     position: absolute;
     width: 24px;
     height: 24px;
-    opacity: 0.7;
+    opacity: 0;
     cursor: pointer;
     z-index: 100px;
     &:checked ~ .burger__list {
